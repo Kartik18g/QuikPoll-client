@@ -40,6 +40,7 @@ const Poll = () => {
         getPollData();
       });
     }
+    console.log(socket)
   }, [socket]);
 
   useEffect(() => {
