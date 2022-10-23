@@ -8,7 +8,7 @@ const SocketProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
   const connect = () => {
-    const sk = io("http://3.7.215.226:8080", {
+    const sk = io("wss://7jjo66x7za.execute-api.ap-south-1.amazonaws.com/production", {
       transports: ["websocket", "polling","flashsocket"],   
     });
     setSocket(sk);
